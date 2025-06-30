@@ -1,0 +1,14 @@
+#spring:
+#    datasource:
+#        url: jdbc:mysql://localhost:3306/p-13963-1
+#        username: root
+#        password: lldj123414
+#        driver-class-name: com.mysql.cj.jdbc.Driver
+
+#
+#        spring:
+#            datasource:
+#                url: jdbc:h2:mem:db_test;MODE=MySQL
+#                username: sa
+#                password:
+#                driver-class-name: org.h2.Driver

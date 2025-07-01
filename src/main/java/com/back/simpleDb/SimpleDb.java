@@ -46,8 +46,9 @@ public class SimpleDb {
         } catch (SQLException e) {
             log.error("method=run, SQL error: {}", e.getMessage());
 //            throw new RuntimeException(e);
+        } finally {
+//            close();
         }
-        //finally close
     }
 
     public void run(String query, String title, String body, boolean isBlind) {
@@ -60,7 +61,9 @@ public class SimpleDb {
             pstmt.executeUpdate();
         } catch (SQLException e) {
             log.error("method=run, SQL error: {}", e.getMessage());
-        }// finally close
+        }finally{
+//            close();
+        }
     }
 
     public void close() {
